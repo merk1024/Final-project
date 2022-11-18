@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1d1f20;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header ul li {
+    margin: 0 22px 0 0;
+}
+
+header ul li a {
+  font-size: 10px;
+  text-transform: uppercase;
+  line-height: 20px;
+  font-family: "Sono", sans-serif;
+  text-decoration: none;
+  color: white;
+}
