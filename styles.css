@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url(./assets/background-img.png);
+}
+
 header {
   background-color: #1d1f20;
   width: 100%;
@@ -11,6 +15,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-bottom: 1px solid #323536;
 }
 
 .line1 {
@@ -132,7 +137,7 @@ header {
   content: "";
   position: absolute;
   background-color: rgb(135, 44, 44, 0);
-  height: 7px;
+  height: 5px;
   width: 100px;
   margin: 0 0 0 -10px;
   transition: 0.3s;
@@ -144,9 +149,8 @@ header {
   margin: 30px 0 0 -10px;
 }
 
-
 .social {
-    margin: 0 0 10px 0;
+  margin: 0 0 10px 0;
   width: 195px;
   justify-content: space-between;
 }
@@ -161,4 +165,219 @@ header {
 
 .social li a div:hover {
   width: 50px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.widgets {
+  margin-top: 30px;
+  height: 815px;
+  width: 62%;
+  display: grid;
+  gap: 30px;
+  grid-template-areas:
+    "wid-1 wid-1 wid-1 wid-1"
+    "wid-1 wid-1 wid-1 wid-1"
+    "wid-2 wid-2 wid-3 wid-3";
+}
+
+.widget {
+}
+
+.wid-1 {
+  background-color: #6a8a99;
+  grid-area: wid-1;
+}
+.wid-2 {
+  background-image: url(./assets/banner_1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-area: wid-2;
+}
+.wid-3 {
+  background-image: url(./assets/banner_2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-area: wid-3;
+}
+
+.fp {
+  margin-top: 50px;
+  width: 62%;
+}
+
+.nameofsection {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  margin: 0 0 50px 0;
+}
+
+.nameofsection::after {
+  content: "";
+  position: absolute;
+  background-color: #4a4c4d;
+  height: 2px;
+  width: 400px;
+  margin: 45px 0 0 -350px;
+}
+
+.card-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 15px 0;
+  max-width: 270px;
+}
+
+.card-img {
+  background: url(./assets/card-img-example.webp) no-repeat center;
+  background-size: contain;
+  height: 270px;
+  width: 270px;
+  background-color: #1d1f20;
+  display: flex;
+}
+
+.card-img a {
+  height: 270px;
+  width: 270px;
+}
+
+.card-name {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.card-desc {
+  color: #767879;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.amount {
+  color: white;
+  font-size: 20px;
+}
+
+.addtocart {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  height: 40px;
+  width: 100px;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 11px;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+}
+
+.pc {
+  margin-top: 50px;
+  height: 543px;
+  width: 100%;
+  background-color: #1d1f20;
+  display: flex;
+  justify-content: center;
+}
+
+.pc-c {
+  margin-top: 100px;
+  width: 62%;
+}
+
+.pc-cc {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 220px;
+  gap: 60px;
+}
+
+.topic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.date {
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.trp {
+  height: 500px;
+}
+
+footer {
+  height: 170px;
+  background-color: #1d1f20;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  margin-top: 50px;
+  width: 62%;
+  display: grid;
+  grid-template-areas: "a b" "c d";
+}
+
+.ya-ustal {
+  color: #838688;
+  font-size: 11px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+
+.vcard {
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.vcard-img {
+  background-image: url(./assets/location-img.png);
+  height: 35px;
+  width: 35px;
+  background-size: cover;
+
+  margin-right: 30px;
+}
+
+.vcard-img-2 {
+  background-image: url(./assets/phone-img.png);
+  height: 35px;
+  width: 35px;
+  background-size: cover;
+
+  margin-right: 30px;
+}
+
+.adresss {
+  color: white;
+  font-size: 11px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
 }
