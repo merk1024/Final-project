@@ -185,9 +185,6 @@ main {
     "wid-2 wid-2 wid-3 wid-3";
 }
 
-.widget {
-}
-
 .wid-1 {
   background-color: #6a8a99;
   grid-area: wid-1;
@@ -207,7 +204,7 @@ main {
 
 .fp {
   margin-top: 50px;
-  width: 62%;
+  width: 75%;
 }
 
 .nameofsection {
