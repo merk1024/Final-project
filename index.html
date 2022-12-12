@@ -189,17 +189,5 @@
 
 <!--Стили элементов для корзины-->
 <link href="https://lk.easynetshop.ru/frontend/v5/ens-5271023d.css" rel="stylesheet">
-
-<script>
-  document.addEventListener("EasyNetShopLoaded", function(event) {
-    ens_jQuery('.btn-ens-selected-self').click(function() {  
-      self_name = ''; self_price = 0; 
-      ens_jQuery('#'+ens_jQuery(this).data('div')+' input:checked').each(function(){
-        self_name += ' ' + ens_jQuery(this).data('name');
-        self_price += ens_jQuery(this).data('price');        
-      });
-	  easynetshop_self(self_name, self_price);
-    });
-  }, false);
-</script>
+<script src="/js/main.js"></script>
 </html>
